@@ -13,15 +13,41 @@
 
 /* Головна сторінка */
 body {
+  margin: 0%;
+
   background-color: var(--white);
   color: var(--main-ctext);
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container{
+ width: 1200px;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 0px 15px;
+ 
+  
+  outline: 2px solid tomato;
 }
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+
 }
 
 a {
@@ -37,9 +63,18 @@ a {
   color: var(--main-ctext);
 }
 
+.main-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .logo {
+margin-right: 93px;
+
   color: var(--accent-color);
   font-family: Raleway, cursive;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -54,7 +89,16 @@ a {
 }
 
 /* SITE NAV */
+.site-nav{
+  display: flex;
+}
+
 .site-nav .link {
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+
+background-color: tomato;
   font-family: inherit;
   color: var(--main-ctext);
   font-weight: 500;
@@ -62,6 +106,13 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+
+
 
 .site-nav .link.current {
   color: var(--accent-color);
@@ -72,13 +123,23 @@ a {
   color: var(--accent-color);
 }
 
-.auts-nav .link {
+.auts-nav {
+display: flex;
+margin-left: auto;
+
   color: var(--additional-ctext);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.auts-nav-item:not(:last-child){
+margin-right: 50px;
+
+}
+
+
 .auts-nav .link:hover,
 .auts-nav .link:focus {
   color: var(--accent-color);
@@ -86,14 +147,21 @@ a {
 
 /* HERO */
 .hero {
+padding-top: 200px;
+padding-bottom: 200px;
+
   background-color: var(--dark-bgc);
+  text-align: center;
 }
 .hero-title {
+
+margin-bottom: 30px;
+
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -105,9 +173,8 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
+ 
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
 }
@@ -120,6 +187,11 @@ a {
 }
 
 /* BENEFITS */
+
+    .benefits-blok{
+  padding-top: 94px;
+  padding-bottom: 94px;
+} 
 
 .visually-hidden {
   position: absolute;
@@ -136,6 +208,8 @@ a {
 }
 
 .benefits .title {
+margin-bottom: 10px;
+
   color: var(--main-ctext);
   font-weight: 700;
 font-size: 14px;
@@ -149,7 +223,13 @@ font-size: 14px;
 }
 
 /* WORK */
+.work-blok{
+  
+  padding-bottom: 94px;
+}
+
 .section-work {
+  margin-bottom: 50px;
   color: var(--main-ctext);
   font-weight: 700;
   font-size: 36px;
@@ -158,12 +238,18 @@ font-size: 14px;
 }
 
 /*OUR TEAM*/
+.comand-blok{
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 
 .comand {
   background-color: var(--lighter-bgc);
 }
 
 .title-comand {
+margin-bottom: 50px;
+
   color: var(--main-ctext);
   font-weight: 700;
   font-size: 36px;
@@ -171,6 +257,9 @@ font-size: 14px;
   text-align: center;
 }
 .comand-list {
+margin-top: 30px;
+margin-bottom: 10px;
+
   color: var(--main-ctext);
   font-style: normal;
   font-weight: 500;
