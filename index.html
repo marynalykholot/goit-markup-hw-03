@@ -20,15 +20,18 @@
   <body>
     <!-- Шапка сайту -->
     <header class="page-header">
-      <div class="container  main-nav">
+      <div class="container ">
         <nav class="main-nav">
           <a href="./index.html" class="logo logo-nav"
             >Web<span class="logo-main logo-nav">Studio</span>
           </a>
           <ul class="list site-nav">
-            <li class="site-nav-item"><a href="./index.html" class="link current">Студія </a></li>
-            <li class="site-nav-item"><a href="./portfolio.html" class="link">Портфоліо </a></li>
-            <li class="site-nav-item"><a href="./index.html" class="link">Контакти </a></li>
+            <li class="site-nav-item">
+              <a href="./index.html" class="link nav-link current">Студія </a></li>
+            <li class="site-nav-item">
+              <a href="./portfolio.html" class="link nav-link">Портфоліо </a></li>
+            <li class="site-nav-item">
+              <a href="./index.html" class="link nav-link">Контакти </a></li>
           </ul>
         </nav>
         <ul class="auts-nav list">
@@ -44,37 +47,43 @@
 
     <main>
       <!-- Герой -->
-      <div class="container bgc-hero">
+      
         <section class="hero">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <div class="container ">
+            <h1 class="hero-title">Ефективні рішення для <br>
+               вашого бізнесу</h1>
+            <button class="hero-button" type="button">Замовити послугу</button>
+          
+          </div>
+         
         </section>
-      </div>
+
+      
       <!-- Переваги -->
 
       <section class="section benefits-blok">
         <div class="container">
           <h2 class="visually-hidden">Переваги</h2>
           <ul class="list benefits">
-            <li>
+            <li  class="benefits-item" >
               <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="text-benefits">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li>
+            <li  class="benefits-item">
               <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="text-benefits">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li>
+            <li  class="benefits-item">
               <h3 class="title">ПЛАНУВАННЯ</h3>
               <p class="text-benefits">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
-            </li>
-            <li>
+            </li class="benefits-item">
+            <li  class="benefits-item"> 
               <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="text-benefits">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -87,30 +96,30 @@
       <!-- Чим ми займаємося work -->
 
       <section class="section work-blok">
-        <div class="container">
+        <div class="container work-container">
           <h2 class="section-work">Чим ми займаємося</h2>
           <ul class="list">
-            <li>
+            <li >
               <img
                 src="images/desktop.programs.jpg"
                 alt="creation of desktop applications"
                 width="370"
               />
             </li>
-            <li>
+            <li  class="work-item">
               <img
                 src="images/mobile.applications.jpg"
                 alt="creating mobile applications"
                 width="370"
               />
             </li>
-            <li>
+            <li class="work-item" >
               <img
                 src="images/design.solution.jpg"
                 alt="creation of design solutions"
                 width="370"
               />
-            </li>
+            </li class="work-item">
           </ul>
         </div>
       </section>
@@ -118,25 +127,25 @@
       <!-- Наша команда -->
 
       <section class="comand comand-blok">
-        <div class="container">
+        <div class="container comand-container">
           <h2 class="title-comand">Наша команда</h2>
           <ul class="list">
-            <li>
+            <li class="comand-item">
               <img src="images/ihor.jpg" alt=" photo Ihor Demyanenko" width="270" />
               <h3 class="comand-list">Ігор Дем'яненко</h3>
               <p class="subtitle">Product Designer</p>
             </li>
-            <li>
+            <li class="comand-item">
               <img src="images/olhga.jpg" alt=" photo Olga Repina" width="270" />
               <h3 class="comand-list">Ольга Рєпіна</h3>
               <p class="subtitle">Frontend Developer</p>
             </li>
-            <li>
+            <li class="comand-item">
               <img src="images/mykola.jpg" alt=" photo Mykola Tarasov" width="270" />
               <h3 class="comand-list">Микола Тарасов</h3>
               <p class="subtitle">Marketing</p>
             </li>
-            <li>
+            <li class="comand-item">
               <img
                 src="images/mykhailo.jpg"
                 alt="photo Mykhailo Yermakov
@@ -154,13 +163,13 @@
     <!-- Футер -->
 
     <footer class="section-footer">
-      <div class="container">
-        <a class="logo logo-nav" href="./index.htmlp"
+      <div class="container container-footer">
+        <a class="logo logo-nav-footer" href="./index.htmlp"
           >Web<span class="logo-footer logo-nav">Studio</span>
         </a>
         <address>
           <ul class="list">
-            <li>
+            <li class="address-item">
               <a
                 class="address-footer"
                 href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&h"
@@ -169,10 +178,10 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li>
+            <li class="mail-item">
               <a class="mail-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
+            <li class="tel-item">
               <a class="tel-footer" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
