@@ -531,10 +531,11 @@ li.mail-item{
 .card-text{
  
   padding: 20px 24px;
-}
-
-.card-tumba{
   border-left: 1px solid var(--container-bg);
   border-right: 1px  solid var(--container-bg);
   border-bottom: 1px solid var(--container-bg);
+}
+
+.card-tumba{
+
 }
