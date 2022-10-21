@@ -78,7 +78,6 @@ img{
 
 .page-header .container{
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -151,6 +150,7 @@ img{
 
 .auts-nav {
 display: flex;
+margin-left: auto;
 
 }
 
@@ -213,7 +213,6 @@ padding: 10px 32px;
   align-items: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 
@@ -342,7 +341,7 @@ padding: 10px 32px;
   text-align: center;
 }
 .comand-list {
-margin-top: 30px;
+
 margin-bottom: 10px;
 
   color: var(--main-ctext);
@@ -352,9 +351,13 @@ margin-bottom: 10px;
   line-height: 1.19;
   text-align: center;
 }
+.comand-description{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .subtitle {
-  padding-bottom: 30px;
+
   color: var(--additional-ctext);
   font-weight: 400;
   font-size: 16px;
@@ -370,12 +373,13 @@ margin-bottom: 10px;
 }
 
 
-.container.container-footer{
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
+ 
 
 .section-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
 
   background-color: var(--dark-bgc);
 }
@@ -450,7 +454,7 @@ li.mail-item{
 }
 
 /* PORTFOLIO HTML */
-.portfolio .container{
+.main-portfolio{
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -536,6 +540,3 @@ li.mail-item{
   border-bottom: 1px solid var(--container-bg);
 }
 
-.card-tumba{
-
-}
