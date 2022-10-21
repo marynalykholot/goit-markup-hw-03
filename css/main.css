@@ -81,9 +81,7 @@ img{
   border-bottom: 1px solid var(--border-color);
  }
 
-.page-header {
-  background-color: var(--white);
-}
+
 
 .page-header .logo-nav:hover {
   color: var(--accent-color);
